@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FormAcril
 
 ## Installing Ruby
@@ -41,6 +40,3 @@ You actually have a functional Rails application already. To see it, you need to
 ```
 $ rails server
 ```
-=======
-# formacril
->>>>>>> e803e9bf723b034aabbdbca47aaa46a172f07d82
