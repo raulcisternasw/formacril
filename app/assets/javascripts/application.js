@@ -18,4 +18,23 @@ document.addEventListener('turbolinks:load', function() {
   $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
   });
+
+  $(document).ready(function(){
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        $('#scrolltop').fadeIn();
+      } else {
+        $('#scrolltop').fadeOut();
+      }
+    });
+    // scroll body to 0px on click
+    $('#scrolltop').click(function () {
+      $('#scrolltop').tooltip('hide');
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+    $('#scrolltop').tooltip('show');
+  });
 });
