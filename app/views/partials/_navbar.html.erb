@@ -1,0 +1,22 @@
+<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to ('FORMACRIL').html_safe, welcome_index_path, class: 'navbar-brand' %>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><%= link_to ('INICIO').html_safe, '#home', title: 'INICIO', data: { toggle: 'tooltip', placement: 'bottom' } %></li>
+          <li><%= link_to ('NOSOTROS').html_safe, '#about', title: 'NOSOTROS', data: { toggle: 'tooltip', placement: 'bottom' } %></li>
+          <li><%= link_to ('SERVICIOS').html_safe, '#products', title: 'SERVICIOS', data: { toggle: 'tooltip', placement: 'bottom' } %></li>
+          <li><%= link_to ('CONTACTO').html_safe, '#contact', title: 'CONTACTO', data: { toggle: 'tooltip', placement: 'bottom' } %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
