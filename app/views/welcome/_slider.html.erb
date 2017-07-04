@@ -15,11 +15,11 @@
     <% @images.each do |index, image| %>
       <% if index == 0 %>
         <div class="item active item-active">
-          <%= image_tag(image) %>
+          <%= image_tag(image, class: 'img-responsive') %>
         </div>
       <% else %>
         <div class="item">
-          <%= image_tag(image) %>
+          <%= image_tag(image, class: 'img-responsive') %>
         </div>
       <% end %>
     <% end %>

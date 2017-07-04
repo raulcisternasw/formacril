@@ -36,15 +36,18 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <h3><%= image_tag('products/Letreros-300x216.jpg') %><br><br> Letreros</h3>
+        <%= image_tag('products/Letreros-300x216.jpg', class: 'img-responsive') %>
+        <h3>Letreros</h3>
         <p>Letreros luminosos, Tótem, Señales de tránsito y Cajas de luz Panaflex.</p>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <h3><%= image_tag('products/Volumetricas-300x217.jpg') %><br><br> Letras y formas volumétricas</h3>
+        <%= image_tag('products/Volumetricas-300x217.jpg', class: 'img-responsive') %>
+        <h3>Letras y formas volumétricas</h3>
         <p>Volúmenes en acrílico, Madera, Fierro y Acero.</p>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <h3><%= image_tag('products/CupulaSushi-300x217.jpg') %><br><br> Trabajos especiales</h3>
+        <%= image_tag('products/CupulaSushi-300x217.jpg', class: 'img-responsive') %>
+        <h3>Trabajos especiales</h3>
         <p>Señalética, Módulos especiales, Muebles exhibidores y Cúpulas.</p>
       </div>
     </div>
@@ -76,28 +79,26 @@
         <p>patricioacrilico@gmail.com</p>
 
         <p class="lead">Redes sociales:</p>
-        <i class="fa fa-facebook-square"></i>
-        <i class="fa fa fa-instagram"></i>
+        <i><%= link_to '', 'https://www.facebook.com/FormAcrilChile/', class: 'fa fa-facebook-square', target: '_blank', title: 'Facebook', data: { toggle: 'tooltip', placement: 'bottom' } %></i>
+        <i><%= link_to '', 'https://www.instagram.com/formacril/', class: 'fa fa fa-instagram', target: '_blank', title: 'Instagram', data: { toggle: 'tooltip', placement: 'bottom' } %></i>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <h3>Nuestra ubicación <span class="glyphicon glyphicon-globe"></span></h3>
 
-        <iframe class="well well-xs well-sm well-md well-lg" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBWnsjkEix6cq5eoecUS5yfXrYnhXYStCo&q=Talca+0509,+Quilicura,+Region+Metropolitana" width="320" height="320"></iframe>
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBWnsjkEix6cq5eoecUS5yfXrYnhXYStCo&q=Talca+0509,+Quilicura,+Region+Metropolitana"></iframe>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <div id="footer" class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <p>© 2017 FormAcril Agencia Publicidad / Talca 509, Quilicura. Chile.</p>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <ul>
-        <li><p>+569 8572 2241</p></li>
-        <li><p>patricioacrilico@gmail.com</p></li>
-      </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>© 2017 FORMACRIL AGENCIA PUBLICIDAD / TALCA 509, QUILICURA. CHILE.</p>
+      </div>
     </div>
   </div>
 </div>
