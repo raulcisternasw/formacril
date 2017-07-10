@@ -7,8 +7,7 @@
 
   a{
     color: #ffffff;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 10px;
   }
 
   a:hover {
@@ -26,31 +25,29 @@ body {
 
   h1 {
     color: #262626;
+    letter-spacing: 1px;
   }
 
   h3 {
     color: #262626;
+    letter-spacing: 1px;
   }
 
   p {
     color: #666666;
-  }
-
-  span {
-    color: #fac42b;
+    letter-spacing: 1px;
   }
 }
 
 #home {
   padding-top:50px;
 
-  span {
+  a {
     color: #ffffff;
   }
 
-  img {
-    max-height: 100%;
-    max-width: 100%;
+  a:hover {
+    background-color: #000000;
   }
 }
 
@@ -61,6 +58,7 @@ body {
 
   span {
     font-size: 70px;
+    color: #fac42b;
   }
 }
 
@@ -71,8 +69,7 @@ body {
   background-color: #f5f5f5;
 
   img {
-    max-height: 100%;
-    max-width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -85,14 +82,10 @@ body {
     color: #333333;
   }
 
-  i {
+  a {
     font-size: 70px;
     color: #fac42b;
-  }
-
-  iframe {
-    max-height: 100%;
-    max-width: 100%;
+    text-decoration: initial;
   }
 }
 
@@ -107,6 +100,11 @@ body {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
+  }
+
+  p{
+    font-size: 10px;
+    text-align: center;
   }
 }
 
