@@ -1,28 +1,22 @@
 <div id="home" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <% @images.each do |indicator, file| %>
-      <% if indicator == 0 %>
-        <li data-target="#home" data-slide-to=<%= indicator %> class="active"></li>
-      <% else %>
-        <li data-target="#home" data-slide-to=<%= indicator %>></li>
-      <% end %>
-    <% end %>
+    <li data-target="#home" data-slide-to="0" class="active"></li>
+    <li data-target="#home" data-slide-to="1"></li>
+    <li data-target="#home" data-slide-to="2"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <% @images.each do |index, image| %>
-      <% if index == 0 %>
-        <div class="item active item-active">
-          <%= image_tag(image, class: 'img-responsive') %>
-        </div>
-      <% else %>
-        <div class="item">
-          <%= image_tag(image, class: 'img-responsive') %>
-        </div>
-      <% end %>
-    <% end %>
+    <div class="item active">
+      <%= image_tag "slides/Home-01.jpg", class: "img-responsive", alt: "First slide" %>
+    </div>
+    <div class="item">
+      <%= image_tag "slides/Home-02.jpg", class: "img-responsive", alt: "Second slide" %>
+    </div>
+    <div class="item">
+      <%= image_tag "slides/Home-03.jpg", class: "img-responsive", alt: "Third slide" %>
+    </div>
   </div>
 
   <!-- Left and right controls -->

@@ -42,8 +42,12 @@ body {
 #home {
   padding-top:50px;
 
-  span {
+  a {
     color: #ffffff;
+  }
+
+  a:hover {
+    background-color: #000000;
   }
 }
 
