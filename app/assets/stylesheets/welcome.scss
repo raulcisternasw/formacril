@@ -3,15 +3,33 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #navbar {
-  background-color: #262626;
+  background: rgba(0,0,0,0);
+  border-style: none;
+  padding-top: 10px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  font-size: 15px;
+  font-weight: bold;
 
-  a{
-    color: #ffffff;
-    font-size: 10px;
+  a {
+    color: #0057e7;
   }
 
   a:hover {
-    color: #fac42b;
+    color: #d62d20;
+  }
+
+  a.navbar-brand {
+    color: #d62d20;
+  }
+
+  a.navbar-home {
+    color: #008744;
+  }
+
+  a.navbar-home:hover {
+    color: #d62d20;
   }
 }
 
@@ -40,8 +58,6 @@ body {
 }
 
 #home {
-  padding-top:50px;
-
   a.left:hover {
     background-color: #000000;
   }
@@ -52,19 +68,30 @@ body {
 }
 
 #about {
-  padding-top:100px;
-  padding-bottom:100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
 
   span {
     font-size: 70px;
-    color: #fac42b;
+  }
+
+  span.glyphicon-cog {
+    color: #ffa700;
+  }
+
+  span.glyphicon-user {
+    color: #008744;
+  }
+
+  span.glyphicon-flash {
+    color: #0057e7;
   }
 }
 
 #products {
-  padding-top:100px;
-  padding-bottom:100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
   background-color: #f5f5f5;
 
@@ -74,37 +101,62 @@ body {
 }
 
 #contact {
-  padding-top:100px;
-  padding-bottom:100px;
-  text-align: left;
-
-  p {
-    color: #333333;
-  }
+  padding-top: 100px;
+  padding-bottom: 20px;
+  text-align: center;
 
   a {
     font-size: 70px;
     color: #fac42b;
     text-decoration: initial;
   }
+
+  span.glyphicon-home {
+    color: #ffa700;
+  }
+
+  span.glyphicon-earphone {
+    color: #008744;
+  }
+
+  span.glyphicon-envelope {
+    color: #0057e7;
+  }
+}
+
+#maps {
+  height: 380px;
+  width: 100%;
+
+  iframe {
+    height: 100%;
+    width: 100%;
+    border-style: none;
+  }
 }
 
 #footer {
-  padding-top:20px;
-  padding-bottom:20px;
-  text-align: left;
-  color: #ececee;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
   background-color: #000000;
 
-  li{
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
+  p {
+    font-size: 10px;
   }
 
-  p{
-    font-size: 10px;
-    text-align: center;
+  a {
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: initial;
+  }
+
+  a:hover.fa-facebook-square {
+    color: #3b5998;
+  }
+
+  a:hover.fa-linkedin-square {
+    color: #0077B5;
   }
 }
 
@@ -116,7 +168,7 @@ body {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #fac42b;
+  background-color: #d62d20;
   color: #ffffff;
   cursor: pointer;
   padding: 15px;
