@@ -15,16 +15,14 @@
 //= require_tree .
 
 document.addEventListener('turbolinks:load', function() {
-  $(document).ready(function() {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
-
   $(document).ready(function(){
     $(window).scroll(function () {
       if ($(this).scrollTop() > 50) {
         $('#scrolltop').fadeIn();
+        $(".navbar-default").css('background-color', '#ffffff');
       } else {
         $('#scrolltop').fadeOut();
+        $(".navbar-default").css('background-color', 'rgba(0,0,0,0)');
       }
     });
     // scroll body to 0px on click
